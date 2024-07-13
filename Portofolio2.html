@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Shaban - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0779e4 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header ul li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        .bio, .content {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .slider {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+        }
+        .slides {
+            display: none;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Mohamed Shaban</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#bio">Bio</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#employment">Employment</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <!-- <li><a href="#projects">Projects</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- <div class="slider">
+        <div class="slides fade"> -->
+            <!-- <img src="D:\GDqto42aEAA5eYi.jpeg" style="width: 100%;height: 20%;"> -->
+            <!-- <div class="text">Caption Text 1</div> -->
+        <!-- </div>
+        <div class="slides fade"> -->
+            <!-- <img src="d:\GEyOLLZWIAA0e8k.jpeg" style="width: 100%;height: 20%;"> -->
+            <!-- <div class="text">Caption Text 2</div> -->
+        <!-- </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+    <!-- </div> -->
+    <!-- <br> -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
+    <div class="container">
+        <section id="bio" class="bio">
+            <h2>Introduction</h2>
+            <p>I am a dedicated Full Stack .NET Developer with a solid background in developing and maintaining web-based applications. With a B.S.E. in Computer Science and extensive experience in various technologies and frameworks, I am passionate about delivering high-quality software solutions. My career objectives include continuous learning and contributing to innovative projects that make a significant impact.</p>
+        </section>
+        <section id="employment" class="content">
+            <h2>Employment</h2>
+            <p><strong>Full Stack .NET Developer, ITS-International Turnkey Systems</strong><br>Jan 2023 - Present<br>Developed and maintained web-based applications, including Credit Bureau systems, using C#, ASP.NET, and Oracle database.<br>Implemented features utilizing .NET Web API, SQL Server database, and Webforms.<br>Managed deployment and publication of applications on servers and resolved issues in both web and desktop applications.</p>
+            <p><strong>Full Stack .NET Developer, iucon Egypt</strong><br>Apr 2021 – Jan 2023<br>Developed and maintained web-based applications, including E-Book systems, using .NET Core API, MVC Core, SQL Server.<br>Integrated third-party Single Sign-On (SSO) solutions, including building SSO meta search and SSO sign-on functionalities.<br>Developed features using Angular and Devextreme Angular, ensuring smooth user experiences on the frontend.<br>Built tools using Console App .NET Core, such as updating currency rates daily from third-party sources.<br>Wrote Selenium scripts using JavaScript to automate testing of website functionalities, ensuring reliability and efficiency in testing procedures.</p>
+        </section>
+        <section id="skills" class="content">
+            <h2>Skills</h2>
+            <p><strong>Programming Languages:</strong><br>C#, C++, Python, JavaScript, SQL, Typescript</p>
+            <p><strong>Frameworks:</strong><br>MVC5, .NET Web API, ASP.NET CORE, MVC CORE, ASP.NET CORE API, Entity Framework, Dapper, Angular, Knockout, Web Technologies (HTML, CSS, JSON, XML)</p>
+            <p><strong>Databases:</strong><br>Microsoft SQL Server, Oracle, Elastic Search, Redis</p>
+            <p><strong>Tools:</strong><br>Git/<a href="https://github.com/mohamedshabban" target="_blank">GitHub</a>, POSTMAN, TFS DevOps, Scrum Master</p>
+        </section>
+        <section id="education" class="content">
+            <h2>Education</h2>
+            <p><strong>Ain Shams University</strong><br>B.S.E. in Computer Science, Aug 2020<br>Major: Good<br>Graduation Project: Movies Recommendations - Excellent<br>Technologies: Django Framework, Python, Machine Learning<br>Description: Recommending movies to users based on their interactions with the Website.</p>
+            <p><strong>Undergraduate Coursework:</strong><br>Operating Systems, Databases, Algorithms, Data Structure, Object-Programming Languages</p>
+        </section>
+        <section id="contact" class="content">
+            <h2>Contact</h2>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/mohamed-shaban-b4308218b/" target="_blank">Mohamed Shaban</a></p>
+            <p>Email: <a href="mailto:Mohamedshabban707@gmail.com">Mohamedshabban707@gmail.com</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mohamed Shaban. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slides");
+            let dots = document.getElementsByClassName("dot");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+    </script>
+</body>
+</html>
